@@ -1,0 +1,21 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  left:
+    - text: "About Me"
+      href: about.html
+    - text: "Dashboard"
+      href: dashboard.html
+  right:
+    - text: "Resume"
+      href: Yida Wang.pdf
+    - icon: fa-envelope fa-lg
+      href: mailto:<yw3774@columbia.cumc.edu>
+    - icon: fab fa-linkedin-in
+      href: https://www.linkedin.com/in/yida-wang-15a4a21b3/
+    - icon: fa-github fa-lg
+      href: https://github.com/yw3774
+output:
+  html_document:
+    theme: flatly

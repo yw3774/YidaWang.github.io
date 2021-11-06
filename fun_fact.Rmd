@@ -1,0 +1,18 @@
+---
+title: "It's Me"
+output: html_document
+theme: darkly
+---
+
+---
+
+## I love sleeping!
+<img src="images/sleep.JPG" style="width:60%">
+---
+
+## I love romantic sunset.
+<img src="images/sunset.JPG" style="width:60%">
+---
+
+## I came to Macao alone to see Shawn Mendes!
+<img src="images/shawn.JPG" style="width:60%">

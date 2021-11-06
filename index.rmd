@@ -1,0 +1,20 @@
+---
+title: "Yida's Web"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: darkly
+---
+
+Welcome to my web!   
+
+I'm Yida Wang, a first-year Master student in Biostatistics at Columbia University Mailman School of Public Health.
+
+* Click on [About Me](about.html) to attach more details about me professionally:)  
+* Click on [It's Me](fun_fact.html) to attach more details about me personally:) 
+
+You can also find a dashboard that I created using Instacart Online Grocery Shopping dataset. 
+
+
+<img src="images/wink-puppy.gif" style="width:75%">

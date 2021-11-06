@@ -1,0 +1,79 @@
+---
+title: "About Me:)"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: darkly
+---
+Here's back to [index](index.html) page.
+
+## Education  
+* Columbia University, 2021-2023  
+
+M.S. in Biostatistics  
+
+* Hunan University(China), 2017-2021  
+
+B.S. in Information and Computing Science  
+
+## Computer Skills
+MATLAB, R, Python, C, MySQL
+
+## Honors & Awards
+* Individual Scholarship (2019)
+* Individual Scholarship (2020)
+* Scholarship for Outstanding in Competition (2020)
+* National 2nd Prize & Provincial 1st Prize, China Undergraduate Mathematical Contest in Modeling(2019)
+* National excellent prize, National College Student Innovation and Entrepreneurship Training Program（2019-2021）
+
+## Academic Highlights
+* Distributed Optimization Based on Neurodynamics, Team Member, Supervisor: Prof. Zhenyuan Guo, Changsha, China, June 2019 – June 2021.
+    * Established differential equation models according to optimization problems and established the
+corresponding KKT system.
+    * Adopted neural dynamics and RNNs to find the global optimal solution.
+    * Proved the uniform convergence of the algorithm based on Lyapunov stability and Russell invariant
+principle.
+    * Conducting numerical simulation with Matlab to verify the correctness of optimization algorithms and
+explain the advantages.
+
+* The Prediction and Analysis of the Mechanisms of Action of Drugs with Python, Changsha, China, Sept 2020 – Dec 2020.
+    * Conducted and visualized the correlation analysis and Principal Component Analysis of the variables through Sklearn, Seaborn and Plotly based on underlying biomedical knowledge.
+    * Carried out visualized analysis of the MoA of drugs from two perspectives and further studied the correlation of different MoAs.
+    * Employed LDA, QDA, Bayesian Methods and multi-label classification method based on KNN to predict the scores of MoAs of drugs.
+* Machine Learning for Computer Networking, UChicago Online Research Program, July 2020 – Sep 2020
+    * Studied knowledge related to machine learning, neural networks and principles of network encryption and interception.
+    * Preprocessed the Boston house price dataset with Python; employed logistic regression and linear regression to construct model with PyTorch; evaluated the model with the confusion matrix and optimized the accuracy.
+    * Assisted in the data preprocessing and multi-layer perceptron construction to complete the traffic classification over DNS and DoH with the accuracy of 98%.
+* Campus Sports Database Design with MySQL, Changsha, China, Feb 2020 – June 2020
+    * Designed two sub-systems of the database: information query platform and schedule management
+system.
+    * Designed the ER diagram according to functional requirements and data structure and optimized relational schema based on the 3rd Normal Form to get base tables that satisfy integrity constraints.
+    * Limited the query response time within 1s and ensured the database security by setting permissions for different users. 
+* Business Data Analysis, CMU Remote Summer Research Program, July 2019 – Aug 2019
+    * Studied the process of business analysis, including data mining, data processing and data analysis
+    * Set up the optimal housing plan of a virtual character according to his income and family demands with rapid miner: Filtered out the missing values and invalid values with Rapid Miner to ensure the consistency of the housing data; Analyzed the housing demands with Decision Trees and located the best community with Cluster Analysis.
+
+## Professional Experiences
+* HFT Investment Management Co., Ltd, Intern, Marketing Department, Shanghai, China, Aug 2019.
+    * Collected the daily closing and opening prices of A Fund and those of the Shanghai Composite Index
+on the corresponding date from funds database with Rapid Miner.
+    * Drew line charts with Rapid Miner and analyzed the price trend of A Fund by comparing the price trend with the Shanghai Composite Index.
+    * Calculated automatic investment returns of A fund in Excel and formulated a reasonable investment
+plan for clients.
+    
+## Competitions
+* Research on Solutions to Reducing the Impact of Global Warming on Fishing Industry in Scotland, Mathematical Contest in Modeling, Problem B, Advisor: Prof. Zhengyuan Guo, Feb 2020.
+    * Constructed Grey Forecast Differential Equation Model with Matlab to predict the sea surface
+temperature and new habitat of herring and mackerel.
+    * Calculated the maximum fishing range of two ports based on the maximum radius method and
+predicted the fishable year with Grey Model.
+    * Analyzed the catch quantity, profits and costs through the random number model and proposed to
+ establish offshore bases to reduce the impact of the fishing industry.
+* Research on the Cooperation Strategy in a Team Sport,  China Undergraduate Mathematical Contest in Modeling, Supervisor: Prof. Guoqiang Peng, Sep 2019.
+    * Employed ordinary differential equation to find the relationship between the speed and time of the volleyball and the drum.
+    * Used the variable upper limit integral to solve the falling time of the volleyball and the rising time of the drum.
+    * Simulated and optimized the collision and movement process of the ball and drum in Matlab.
+  
+---
+# To know more here is my [resume](Yida Wang.pdf)

@@ -1,0 +1,88 @@
+---
+title: "Plots of Instacart Online Grocery Shopping"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, message=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("instacart")
+instacart = instacart %>% 
+  janitor::clean_names()
+```
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+aisles_plot = 
+  instacart %>% 
+  group_by(aisle) %>% 
+  summarise(
+    n_order = n()
+  ) %>% 
+  filter(n_order > 19000) %>%
+  mutate(aisle = fct_reorder(aisle, n_order)) %>% 
+  plot_ly(
+    x = ~aisle, y = ~ n_order, type = "bar", color = ~aisle, colors = "viridis"
+  ) %>% 
+  layout(title = "Top 10 Popular Aisles in Instacart")
+aisles_plot
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+coffee_plot = instacart %>% 
+  mutate(
+    order_dow = case_when(
+      order_dow == '0' ~ 'Sunday',
+      order_dow == '1' ~ 'Monday',
+      order_dow == '2' ~ 'Tuesday',
+      order_dow == '3' ~ 'Wednesday',
+      order_dow == '4' ~ 'Thursday',
+      order_dow == '5' ~ 'Friday',
+      order_dow == '6' ~ 'Saturday'),
+    order_dow = factor(order_dow, levels = c('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'))) %>% 
+  filter(aisle == "coffee") %>% 
+  group_by(order_dow) %>% 
+  summarise(
+    average_number = mean(order_number)
+  ) %>% 
+  plot_ly(
+    x = ~order_dow, y = ~average_number, type = "scatter", mode = "lines"
+  ) %>% 
+  layout(title = "Average Order Numbers of coffee by Week",
+    xaxis = list(title = 'Days of the Week')
+  )
+coffee_plot
+```
+
+### Chart C
+
+```{r}
+beverages_plot = instacart %>% 
+  filter(department == "beverages") %>%
+  plot_ly(
+    x = ~aisle, y = ~order_hour_of_day, split = ~aisle, type = "violin", box = list(visible = T)
+  ) %>% 
+  layout(
+    title = "Distribution of Order Hour of Beverages in Instacart",
+    xaxis = list(title = "Beverages Types"),
+    yaxis = list(title = "Order Hour of a Day")
+  )
+beverages_plot
+```

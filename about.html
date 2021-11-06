@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>About Me:)</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About Me</a>
+</li>
+<li>
+  <a href="dashboard.html">Dashboard</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="Yida Wang.pdf">Resume</a>
+</li>
+<li>
+  <a href="mailto:&lt;yw3774@columbia.cumc.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/yida-wang-15a4a21b3/">
+    <span class="fab fa-linkedin-in"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/yw3774">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">About Me:)</h1>
+
+</div>
+
+
+<p>Here’s back to <a href="index.html">index</a> page.</p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<ul>
+<li>Columbia University, 2021-2023</li>
+</ul>
+<p>M.S. in Biostatistics</p>
+<ul>
+<li>Hunan University(China), 2017-2021</li>
+</ul>
+<p>B.S. in Information and Computing Science</p>
+</div>
+<div id="computer-skills" class="section level2">
+<h2>Computer Skills</h2>
+<p>MATLAB, R, Python, C, MySQL</p>
+</div>
+<div id="honors-awards" class="section level2">
+<h2>Honors &amp; Awards</h2>
+<ul>
+<li>Individual Scholarship (2019)</li>
+<li>Individual Scholarship (2020)</li>
+<li>Scholarship for Outstanding in Competition (2020)</li>
+<li>National 2nd Prize &amp; Provincial 1st Prize, China Undergraduate Mathematical Contest in Modeling(2019)</li>
+<li>National excellent prize, National College Student Innovation and Entrepreneurship Training Program（2019-2021）</li>
+</ul>
+</div>
+<div id="academic-highlights" class="section level2">
+<h2>Academic Highlights</h2>
+<ul>
+<li>Distributed Optimization Based on Neurodynamics, Team Member, Supervisor: Prof. Zhenyuan Guo, Changsha, China, June 2019 – June 2021.
+<ul>
+<li>Established differential equation models according to optimization problems and established the corresponding KKT system.</li>
+<li>Adopted neural dynamics and RNNs to find the global optimal solution.</li>
+<li>Proved the uniform convergence of the algorithm based on Lyapunov stability and Russell invariant principle.</li>
+<li>Conducting numerical simulation with Matlab to verify the correctness of optimization algorithms and explain the advantages.</li>
+</ul></li>
+<li>The Prediction and Analysis of the Mechanisms of Action of Drugs with Python, Changsha, China, Sept 2020 – Dec 2020.
+<ul>
+<li>Conducted and visualized the correlation analysis and Principal Component Analysis of the variables through Sklearn, Seaborn and Plotly based on underlying biomedical knowledge.</li>
+<li>Carried out visualized analysis of the MoA of drugs from two perspectives and further studied the correlation of different MoAs.</li>
+<li>Employed LDA, QDA, Bayesian Methods and multi-label classification method based on KNN to predict the scores of MoAs of drugs.</li>
+</ul></li>
+<li>Machine Learning for Computer Networking, UChicago Online Research Program, July 2020 – Sep 2020
+<ul>
+<li>Studied knowledge related to machine learning, neural networks and principles of network encryption and interception.</li>
+<li>Preprocessed the Boston house price dataset with Python; employed logistic regression and linear regression to construct model with PyTorch; evaluated the model with the confusion matrix and optimized the accuracy.</li>
+<li>Assisted in the data preprocessing and multi-layer perceptron construction to complete the traffic classification over DNS and DoH with the accuracy of 98%.</li>
+</ul></li>
+<li>Campus Sports Database Design with MySQL, Changsha, China, Feb 2020 – June 2020
+<ul>
+<li>Designed two sub-systems of the database: information query platform and schedule management system.</li>
+<li>Designed the ER diagram according to functional requirements and data structure and optimized relational schema based on the 3rd Normal Form to get base tables that satisfy integrity constraints.</li>
+<li>Limited the query response time within 1s and ensured the database security by setting permissions for different users.</li>
+</ul></li>
+<li>Business Data Analysis, CMU Remote Summer Research Program, July 2019 – Aug 2019
+<ul>
+<li>Studied the process of business analysis, including data mining, data processing and data analysis</li>
+<li>Set up the optimal housing plan of a virtual character according to his income and family demands with rapid miner: Filtered out the missing values and invalid values with Rapid Miner to ensure the consistency of the housing data; Analyzed the housing demands with Decision Trees and located the best community with Cluster Analysis.</li>
+</ul></li>
+</ul>
+</div>
+<div id="professional-experiences" class="section level2">
+<h2>Professional Experiences</h2>
+<ul>
+<li>HFT Investment Management Co., Ltd, Intern, Marketing Department, Shanghai, China, Aug 2019.
+<ul>
+<li>Collected the daily closing and opening prices of A Fund and those of the Shanghai Composite Index on the corresponding date from funds database with Rapid Miner.</li>
+<li>Drew line charts with Rapid Miner and analyzed the price trend of A Fund by comparing the price trend with the Shanghai Composite Index.</li>
+<li>Calculated automatic investment returns of A fund in Excel and formulated a reasonable investment plan for clients.</li>
+</ul></li>
+</ul>
+</div>
+<div id="competitions" class="section level2">
+<h2>Competitions</h2>
+<ul>
+<li>Research on Solutions to Reducing the Impact of Global Warming on Fishing Industry in Scotland, Mathematical Contest in Modeling, Problem B, Advisor: Prof. Zhengyuan Guo, Feb 2020.
+<ul>
+<li>Constructed Grey Forecast Differential Equation Model with Matlab to predict the sea surface temperature and new habitat of herring and mackerel.</li>
+<li>Calculated the maximum fishing range of two ports based on the maximum radius method and predicted the fishable year with Grey Model.</li>
+<li>Analyzed the catch quantity, profits and costs through the random number model and proposed to establish offshore bases to reduce the impact of the fishing industry.</li>
+</ul></li>
+<li>Research on the Cooperation Strategy in a Team Sport, China Undergraduate Mathematical Contest in Modeling, Supervisor: Prof. Guoqiang Peng, Sep 2019.
+<ul>
+<li>Employed ordinary differential equation to find the relationship between the speed and time of the volleyball and the drum.</li>
+<li>Used the variable upper limit integral to solve the falling time of the volleyball and the rising time of the drum.</li>
+<li>Simulated and optimized the collision and movement process of the ball and drum in Matlab.</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="to-know-more-here-is-my-resume" class="section level1">
+<h1>To know more here is my <a href="Yida%20Wang.pdf">resume</a></h1>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
